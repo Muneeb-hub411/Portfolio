@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaHamburger } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -22,7 +23,9 @@ const Navbar = () => {
             key={id}
             className="p-4 text-2xl font-oswald cursor-pointer  hover:scale-105 transition-transform duration-200"
           >
-            {link}
+            <Link to={link} smooth duration={500}>
+              {link}
+            </Link>
           </li>
         ))}
       </ul>
@@ -40,7 +43,9 @@ const Navbar = () => {
               key={id}
               className="px-4 cursor-pointer py-6 text-4xl"
             >
-              {link}
+              <Link to={link} smooth duration={500}>
+                {link}
+              </Link>
             </li>
           ))}
         </ul>
