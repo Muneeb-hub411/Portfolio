@@ -7,7 +7,7 @@ const Contact = () => {
       <form
         action="https://getform.io/f/bzylpyra"
         method="POST"
-        className=" -mt-12 bg-transparent flex flex-col space-y-4 w-full max-w-md"
+        className=" -mt-20 sm:-mt-0 bg-transparent flex flex-col space-y-4 w-full max-w-md"
       >
         <h2 className="text-white text-4xl font-oswald text-center">
           Contact Me
