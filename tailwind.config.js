@@ -7,6 +7,9 @@ export default {
         oswald: ["Oswald", "sans-serif"],
         GreyQo: ["Grey Qo", "cursive"],
       },
+      screens: {
+        xs: "374px", // Custom screen size for 375px width
+      },
     },
   },
   plugins: [],
