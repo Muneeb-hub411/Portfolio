@@ -1,7 +1,7 @@
 import SnapSell from "../assets/SnapSell.jpg";
 import EJ from "../assets/E&J.jpg";
 import equipal from "../assets/Equipal.jpg";
-import registrationSystem from "../assets/RegistrationSystem.PNG";
+import registrationSystem from "../assets/RegistrationSystem.jpg";
 const Projects = () => {
   const project = [
     { id: 1, name: SnapSell, url: "https://github.com/Muneeb-hub411/SnapSell" },
