@@ -8,7 +8,7 @@ const Home = () => {
     >
       <div className="  h-[500px] flex flex-col flex-wrap justify-center items-center mt-20">
         <div className=" ">
-          <div className="text-white font-oswald text-7xl md:m-4 xs:text-4xl xs:p-2 mt-20">
+          <div className="text-white font-oswald md:text-7xl md:m-4 xs:text-3xl xs:p-2 s8:text-4xl mt-20">
             <h2 className="">Hello , I am a Web Developer</h2>
           </div>
           <div className="text-gray-500 text-xl m-4">

@@ -8,7 +8,8 @@ export default {
         GreyQo: ["Grey Qo", "cursive"],
       },
       screens: {
-        xs: "374px", // Custom screen size for 375px width
+        xs: "300px", // Custom screen size for 375px width
+        S8: "375px",
       },
     },
   },

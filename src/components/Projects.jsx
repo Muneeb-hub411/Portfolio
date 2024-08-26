@@ -1,6 +1,7 @@
 import SnapSell from "../assets/SnapSell.jpg";
 import EJ from "../assets/E&J.jpg";
 import equipal from "../assets/Equipal.jpg";
+import registrationSystem from "../assets/RegistrationSystem.PNG";
 const Projects = () => {
   const project = [
     { id: 1, name: SnapSell, url: "https://github.com/Muneeb-hub411/SnapSell" },
@@ -14,6 +15,11 @@ const Projects = () => {
       name: equipal,
       url: "https://yourequipal.com/",
     },
+    {
+      id: 4,
+      name: registrationSystem,
+      url: "https://github.com/Muneeb-hub411/Registration_System",
+    },
   ];
   return (
     <div
@@ -25,7 +31,7 @@ const Projects = () => {
         {project.map(({ id, name, url }) => (
           <div
             key={id}
-            className="h-[350px] rounded-lg bg-gray-500 flex flex-col items-center  p-1"
+            className="h-[350px] rounded-lg bg-gray-500 flex flex-col items-center sm:p-0 xs:p-0  p-1"
           >
             <img className="h-[250px] rounded-md" src={name} alt="" />
             <button className=" w-40 p-4 font-semibold text-purple-800 rounded-md mt-4 hover:scale-110 transition[200] text-xl bg-gradient-to-r from-blue-400 to-blue-600">
