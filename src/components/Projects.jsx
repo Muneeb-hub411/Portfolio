@@ -2,6 +2,7 @@ import SnapSell from "../assets/SnapSell.jpg";
 import EJ from "../assets/E&J.jpg";
 import equipal from "../assets/Equipal.jpg";
 import registrationSystem from "../assets/RegistrationSystem.jpg";
+import BlogApp from "../assets/BlogApp.jpg";
 const Projects = () => {
   const project = [
     { id: 1, name: SnapSell, url: "https://github.com/Muneeb-hub411/SnapSell" },
@@ -19,6 +20,11 @@ const Projects = () => {
       id: 4,
       name: registrationSystem,
       url: "https://github.com/Muneeb-hub411/Registration_System",
+    },
+    {
+      id: 5,
+      name: BlogApp,
+      url: "https://github.com/Muneeb-hub411/BlogApp",
     },
   ];
   return (
