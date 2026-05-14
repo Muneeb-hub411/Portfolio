@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div
       name="About"
-      className="flex flex-col justify-center items-center w-full min-h-screen bg-neon-dark py-20 px-4 md:px-20 relative"
+      className="flex flex-col justify-center items-center w-full min-h-screen bg-neon-dark py-20 px-4 md:px-20 relative overflow-hidden"
     >
       <div className="absolute top-1/4 left-0 w-72 h-72 bg-neon-purple rounded-full mix-blend-multiply filter blur-[128px] opacity-20 animate-pulse-slow"></div>
       <div className="absolute bottom-1/4 right-0 w-72 h-72 bg-neon-cyan rounded-full mix-blend-multiply filter blur-[128px] opacity-20 animate-pulse-slow" style={{ animationDelay: '1s' }}></div>
@@ -14,16 +14,16 @@ const About = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="w-full max-w-4xl glass p-8 md:p-12 rounded-2xl relative z-10"
+        className="w-full max-w-4xl glass p-6 sm:p-8 md:p-12 rounded-2xl relative z-10"
       >
         <div className="mb-8">
-          <h2 className="font-space font-bold text-5xl text-white mb-2">
+          <h2 className="font-space font-bold text-4xl sm:text-5xl text-white mb-2">
             SYSTEM.<span className="text-neon-purple text-glow-purple">ABOUT()</span>
           </h2>
           <div className="h-1 w-32 bg-gradient-to-r from-neon-purple to-transparent rounded-full"></div>
         </div>
 
-        <div className="text-lg md:text-xl text-gray-300 font-space font-light leading-relaxed space-y-6">
+        <div className="text-base sm:text-lg md:text-xl text-gray-300 font-space font-light leading-relaxed space-y-6">
           <p>
             I am a passionate software engineer with a strong background in web
             development, having graduated from SS CASE IT in Islamabad. Over the

@@ -45,18 +45,18 @@ const Skills = () => {
   };
 
   return (
-    <div name="Skills" className="w-full min-h-screen bg-neon-dark py-20 px-4 md:px-8 flex flex-col justify-center items-center relative">
+    <div name="Skills" className="w-full min-h-screen bg-neon-dark py-20 px-4 md:px-8 flex flex-col justify-center items-center relative overflow-hidden">
       {/* Decorative Background */}
       <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-neon-cyan/5 rounded-full blur-[150px] pointer-events-none"></div>
       <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-neon-purple/5 rounded-full blur-[150px] pointer-events-none"></div>
 
       <div className="max-w-screen-xl p-4 mx-auto flex flex-col justify-center w-full h-full relative z-10">
         <div className="pb-12 text-center md:text-left">
-          <h2 className="font-space font-bold text-5xl md:text-6xl text-white mb-2 tracking-tight">
+          <h2 className="font-space font-bold text-4xl sm:text-5xl md:text-6xl text-white mb-2 tracking-tight">
             SYSTEM.<span className="text-neon-cyan text-glow">SKILLS()</span>
           </h2>
           <div className="h-1 w-32 bg-gradient-to-r from-neon-cyan to-transparent rounded-full mb-6 mx-auto md:mx-0"></div>
-          <p className="text-xl text-gray-400 font-space max-w-2xl">
+          <p className="text-base sm:text-lg md:text-xl text-gray-400 font-space max-w-2xl">
             My technical arsenal. Building robust web applications while exploring the frontiers of Agentic AI.
           </p>
         </div>

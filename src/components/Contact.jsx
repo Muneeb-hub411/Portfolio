@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div
       name="Contact"
-      className="w-full min-h-screen bg-neon-dark py-20 px-4 md:px-20 relative flex justify-center items-center"
+      className="w-full min-h-screen bg-neon-dark py-20 px-4 md:px-20 relative flex justify-center items-center overflow-hidden"
     >
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-neon-purple/5 rounded-full blur-[150px] pointer-events-none"></div>
 
@@ -13,7 +13,7 @@ const Contact = () => {
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="w-full max-w-lg glass p-8 md:p-12 rounded-3xl relative z-10 border-t border-l border-white/10"
+        className="w-full max-w-lg glass p-6 sm:p-8 md:p-12 rounded-3xl relative z-10 border-t border-l border-white/10"
       >
         <form
           action="https://getform.io/f/bzylpyra"
@@ -21,7 +21,7 @@ const Contact = () => {
           className="flex flex-col space-y-6"
         >
           <div className="mb-4">
-            <h2 className="font-space font-bold text-4xl text-white mb-2">
+            <h2 className="font-space font-bold text-3xl md:text-4xl text-white mb-2">
               INITIATE.<span className="text-neon-purple text-glow-purple">CONTACT()</span>
             </h2>
             <p className="text-gray-400 font-space text-sm">Send a transmission to my secure inbox.</p>

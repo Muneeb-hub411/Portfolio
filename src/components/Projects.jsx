@@ -35,12 +35,12 @@ const Projects = () => {
   };
 
   return (
-    <div name="Projects" className="w-full min-h-screen bg-neon-darker py-20 px-4 md:px-20 relative">
+    <div name="Projects" className="w-full min-h-screen bg-neon-darker py-20 px-4 md:px-20 relative overflow-hidden">
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-neon-cyan/5 rounded-full blur-[120px] pointer-events-none"></div>
       
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="mb-16">
-          <h2 className="font-space font-bold text-5xl text-white mb-2">
+          <h2 className="font-space font-bold text-4xl sm:text-5xl text-white mb-2">
             SYSTEM.<span className="text-neon-cyan text-glow">PROJECTS()</span>
           </h2>
           <div className="h-1 w-32 bg-gradient-to-r from-neon-cyan to-transparent rounded-full"></div>
