@@ -1,37 +1,65 @@
+import { motion } from "framer-motion";
 import profilepic from "../assets/profileyellowbg.jpg";
 import resume from "../assets/Muneeb_Saleem_CV.pdf";
+
 const Home = () => {
   return (
     <div
       name="Home"
-      className="  grid  md:grid-cols-2 md: w-full min-h-screen bg-gradient-to-b from-black to-gray-800"
+      className="grid md:grid-cols-2 w-full min-h-screen bg-neon-dark pt-20"
     >
-      <div className="  h-[500px] flex flex-col flex-wrap justify-center items-center mt-20 ">
-        <div className=" ">
-          <div className="text-white font-oswald md:text-7xl md:m-4 xs:text-3xl xs:p-2 s8:text-4xl mt-20">
-            <h2 className="">I am a MERN Developer</h2>
-          </div>
-          <div className="text-gray-500 text-xl m-4 leading-8">
-            <p>
-              As a dedicated web developer with a strong foundation in software
-              engineering, I have accumulated two years of experience in web
-              development. Specializing in both the MERN stack and WordPress, I
-              have successfully built dynamic, user-centric applications that
-              balance functionality and design. I am passionate about utilizing
-              the latest technologies to develop efficient solutions,
-              continually delivering high-quality work that aligns with client
-              goals.
-            </p>
-            <button className=" p-4 font-semibold text-purple-800 rounded-md mt-4 hover:scale-110 transition[200] text-xl bg-gradient-to-r from-blue-400 to-blue-600">
-              <a href={resume} download={true}>
-                Download Resume
-              </a>
-            </button>
-          </div>
-        </div>
+      <div className="flex flex-col justify-center items-start px-8 md:px-20 h-full relative z-10">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="max-w-2xl"
+        >
+          <h2 className="font-space font-bold text-5xl md:text-7xl text-white mb-6">
+            Hi, I'm <br />
+            <span className="text-neon-cyan text-glow">Muneeb Saleem</span>
+          </h2>
+          <h3 className="text-2xl md:text-3xl text-gray-400 font-oswald mb-6 tracking-wider uppercase">
+            MERN Stack <span className="text-neon-purple text-glow-purple">& AI Automation</span> Developer
+          </h3>
+          <p className="text-gray-400 text-lg md:text-xl leading-relaxed mb-8 font-space font-light">
+            Crafting intelligent, high-performance web applications. I merge robust software engineering with cutting-edge technologies to build digital experiences that are as intelligent as they are beautiful.
+          </p>
+          
+          <motion.a
+            whileHover={{ scale: 1.05, boxShadow: "0 0 20px #00f3ff" }}
+            whileTap={{ scale: 0.95 }}
+            href={resume}
+            download={true}
+            className="inline-block px-8 py-4 font-space font-bold text-neon-dark bg-neon-cyan rounded-full transition-all duration-300 relative overflow-hidden group"
+          >
+            <span className="relative z-10">INITIALIZE_DOWNLOAD()</span>
+            <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+          </motion.a>
+        </motion.div>
       </div>
-      <div className=" h-[500px] mt-8 flex flex-col justify-center items-center md:mt-[90px]">
-        <img className="md:rounded-full" src={profilepic} alt="" />
+
+      <div className="flex flex-col justify-center items-center h-full relative z-10 pb-20 md:pb-0">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="relative"
+        >
+          {/* Decorative glowing rings */}
+          <div className="absolute inset-0 rounded-full border border-neon-cyan/30 animate-pulse-slow scale-110"></div>
+          <div className="absolute inset-0 rounded-full border border-neon-purple/20 animate-pulse-slow scale-125" style={{ animationDelay: '1s' }}></div>
+          
+          <div className="w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden border-2 border-neon-cyan relative z-10 shadow-[0_0_30px_rgba(0,243,255,0.3)]">
+            <img 
+              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" 
+              src={profilepic} 
+              alt="Muneeb Saleem" 
+            />
+            {/* Subtle scanline effect overlay */}
+            <div className="absolute inset-0 bg-[linear-gradient(rgba(0,243,255,0.1)_1px,transparent_1px)] bg-[length:100%_4px] pointer-events-none opacity-50"></div>
+          </div>
+        </motion.div>
       </div>
     </div>
   );
