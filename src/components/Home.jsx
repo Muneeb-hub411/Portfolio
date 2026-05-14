@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import profilepic from "../assets/profileyellowbg.jpg";
-import resume from "../assets/Muneeb_Saleem_CV.pdf";
+import resume from "../assets/MuneebSaleem_Resume.pdf";
 
 const Home = () => {
   return (
