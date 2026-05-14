@@ -12,7 +12,7 @@ const Projects = () => {
       title: "PerfectAi",
       desc: "Generative AI Application",
       image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80",
-      url: "#",
+      url: "https://github.com/Muneeb-hub411/PerfectFit-AI",
     },
     { id: 1, title: "SnapSell", desc: "E-Commerce Platform", image: SnapSell, url: "https://github.com/Muneeb-hub411/SnapSell" },
     { id: 2, title: "E&J Equine", desc: "Business Website", image: EJ, url: "https://eandjequine.com/" },
